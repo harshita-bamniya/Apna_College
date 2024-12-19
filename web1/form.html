@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .main{
+        /* border: 1px solid black; */
+        width: 400px;
+        height: 500px;
+        padding: 10px;
+        margin: 100px auto;
+        border-radius: 4px;
+        box-shadow: 2px 2px 6px black;
+        background-image: linear-gradient(to right, rgb(230, 226, 229) , rgb(206, 156, 205));
+       }
+       .user{
+        padding: 10px;
+        margin: 1px;
+       }
+       input{
+        width: 250px;
+        height: 25px;
+        padding-left: 10px;
+       }
+       label{
+        padding-right: 40px;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+           <div class="user">
+            <label for="name">
+                username
+                <input type="text" placeholder="username" id="name" name="username">
+            </label>
+           </div>
+           <div class="user">
+            <label for="pass">
+                password
+                <input type="password" placeholder="password" id="pass" name="password">
+            </label>
+           </div>
+           <div class="butt">
+            <button type="submit">submit</button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
