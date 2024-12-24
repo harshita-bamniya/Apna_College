@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Instagram user @<%= data.name%></h2>
+    &nbsp;
+    &nbsp;
+    <h3>Followers:<%=data.followers%></h3>
+    &nbsp;
+    &nbsp;
+    <h3>Following:<%=data.following%></h3>
+    <hr>
+    <%for(let post of data.posts){%>
+        <img src="<%=post.image%>">
+        <p>Likes:<%=post.likes%></p>
+    <%}%>
+</body>
+</html>

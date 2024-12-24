@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Quera</h2>
+    <%for(post of posts){%>
+       <div>
+        <h3><%= post.username%></h3>
+        <h3><%= post.content%></h3>
+        <a href="http://localhost:3000/posts/<%=post.id%>">see more</a>
+       </div>
+    <%}%>
+
+    <br><br>
+    <a href="http://localhost:3000/posts/new">Create new post</a>
+</body>
+</html>
