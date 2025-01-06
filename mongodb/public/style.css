@@ -1,0 +1,12 @@
+div{
+    margin-left: 10px;
+    padding: 4px 30px;
+    margin: 4px;
+    background-color: rgb(90, 194, 235);
+    border-radius: 2px;
+    width: 20%;
+    display: inline-block;
+}
+.chat{
+    display: block;
+}
